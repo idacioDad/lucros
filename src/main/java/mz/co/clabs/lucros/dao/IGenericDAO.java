@@ -1,6 +1,5 @@
 package mz.co.clabs.lucros.dao;
 
-import java.util.List;
 
 public interface IGenericDAO <T>{
 	
