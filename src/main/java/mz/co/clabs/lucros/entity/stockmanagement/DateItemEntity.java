@@ -73,7 +73,4 @@ public class DateItemEntity extends GenericEntity{
 	public void setManufactureDate(Calendar manufactureDate) {
 		this.manufactureDate = manufactureDate;
 	}
-	
-	
-
 }
