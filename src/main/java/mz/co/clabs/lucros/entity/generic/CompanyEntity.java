@@ -11,7 +11,7 @@ import mz.co.clabs.lucros.dao.ICompanyDAO;
 /**
  * 
  * @author Clerio Alfredo Faife
- *
+ *@since  13/03/2018
  */
 
 @Entity

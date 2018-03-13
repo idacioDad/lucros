@@ -7,6 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import mz.co.clabs.lucros.util.EEntityState;
+/**
+ * 
+ * @author Clerio Alfredo Faife
+ * @since  13/03/2018
+ *
+ */
+
 @Entity
 public class GenericEntity {
 	

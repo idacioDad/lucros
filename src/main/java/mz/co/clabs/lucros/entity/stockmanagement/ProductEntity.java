@@ -14,6 +14,13 @@ import javax.persistence.Table;
 
 import mz.co.clabs.lucros.entity.generic.GenericEntity;
 import mz.co.clabs.lucros.entity.user.AdministratorEntity;
+/**
+ * 
+ * @author Clerio Alfredo Faife
+ * @since  13/03/2018
+ *
+ */
+
 @Entity
 @Table(name="PRODUCT")
 public class ProductEntity extends GenericEntity {

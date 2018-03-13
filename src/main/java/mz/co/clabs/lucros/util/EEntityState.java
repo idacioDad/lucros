@@ -1,5 +1,12 @@
 package mz.co.clabs.lucros.util;
 
+/**
+ * Enumeracao que contem  estados de  Entidade
+ * @author Clerio Alfredo Faife
+ * @since  13/03/2018
+ * {@value Activo e Inactivo}
+ *
+ */
 public enum EEntityState {
 	
 	
@@ -12,11 +19,9 @@ public enum EEntityState {
 	EEntityState(int state){
 		this.state=state;
 	}
-	
 	EEntityState(){
 		 
 	}
-	
 	public int getState(){
 		return state;
 	}

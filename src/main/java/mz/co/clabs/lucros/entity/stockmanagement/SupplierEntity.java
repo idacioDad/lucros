@@ -5,6 +5,13 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import mz.co.clabs.lucros.entity.generic.GenericEntity;
+/**
+ * 
+ * @author Clerio Alfredo Faife
+ * @since  13/03/2018
+ *
+ */
+
 @Entity
 @Table(name="SUPPLIER")
 public class SupplierEntity extends GenericEntity {

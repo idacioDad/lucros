@@ -2,7 +2,16 @@ package mz.co.clabs.lucros.dao;
 
 import java.util.List;
 
+
+
 import mz.co.clabs.lucros.entity.generic.CompanyEntity;
+
+/**
+ * 
+ * @author Clerio Alfredo Faife
+ * @since  13/03/2018
+ *
+ */
 
 public interface ICompanyDAO  {
 

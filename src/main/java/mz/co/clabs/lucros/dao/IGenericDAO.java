@@ -1,5 +1,10 @@
 package mz.co.clabs.lucros.dao;
-
+/**
+ * 
+ * @author Clerio Alfredo Faife
+ * @since  13/03/2018
+ *
+ */
 
 public interface IGenericDAO <T>{
 	

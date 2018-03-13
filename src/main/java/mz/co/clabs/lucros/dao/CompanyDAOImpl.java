@@ -9,7 +9,12 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 
 import mz.co.clabs.lucros.entity.generic.CompanyEntity;
-
+/**
+ * 
+ * @author Clerio Alfredo Faife
+ * @since  13/03/2018
+ *
+ */
 
 @Repository
 public class CompanyDAOImpl extends GenericDAOImpl<CompanyEntity> implements ICompanyDAO{
