@@ -7,5 +7,11 @@ package mz.co.clabs.lucros.service;
  *
  */
 public interface IGenericService {
+	
+	public void create();
+	
+	public void update();
+	
+	public void remove();
 
 }
