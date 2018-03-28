@@ -1,13 +1,19 @@
 package mz.co.clabs.lucros.entity.user;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
  *
  */
 @Entity
+@Table(name="warehouse_loyal")
 public class WarehouseLoyalEntity  extends UserEntity implements  IWarehouseLoyal{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 }

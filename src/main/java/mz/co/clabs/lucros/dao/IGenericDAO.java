@@ -1,14 +1,13 @@
 package mz.co.clabs.lucros.dao;
 
+
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
- *
+ * @author clabs programmer
+  *
  */
 
-import mz.co.clabs.lucros.entity.generic.GenericEntity;
-
+ 
 public interface IGenericDAO <T>{
 	
 	public void create(T t);

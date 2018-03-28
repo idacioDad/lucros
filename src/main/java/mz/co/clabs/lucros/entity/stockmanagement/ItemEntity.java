@@ -11,13 +11,18 @@ import mz.co.clabs.lucros.entity.generic.GenericEntity;
 import mz.co.clabs.lucros.entity.user.WarehouseLoyalEntity;
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
+ 
  *
  */
 @Entity
 @Table(name="ITEM")
 public class ItemEntity extends GenericEntity {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Column(name="CODE",nullable=false,unique=true)
 	private String code;

@@ -10,17 +10,22 @@ import mz.co.clabs.lucros.dao.ICompanyDAO;
 
 /**
  * 
- * @author Clerio Alfredo Faife
- *@since  13/03/2018
+ * @author clabs programmer
  */
 
 @Entity
-@Table(name="COMPANY")
+@Table(name="COMPANY",  schema="LUCROS_USER")
 @NamedQueries({
-	@NamedQuery(name=ICompanyDAO.QUERY_NAME.findAll,query=ICompanyDAO.QUERY.findAll)
+	@NamedQuery(name=ICompanyDAO.QUERY_NAME.findAll,query=ICompanyDAO.QUERY.findAll),
+	@NamedQuery(name=ICompanyDAO.QUERY_NAME.findCompanybyId,query=ICompanyDAO.QUERY.findCompanybyId)
 })
 public class CompanyEntity extends GenericEntity{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Column(name="NUIT",nullable=false,unique=true)
 	private String nuit;
 	
@@ -41,6 +46,24 @@ public class CompanyEntity extends GenericEntity{
 	
 	@Column(name="TAX")
 	private double tax;
+	
+	public CompanyEntity(){}
+	
+	public CompanyEntity(String nuit,
+			String name,
+			String email,
+			String telephone,
+			String address,
+			byte [] logo,
+			double tax){
+		this.name=name;
+		this.email=email;
+		this.telephone=telephone;
+		this.address=address;
+		this.logo=logo;
+		this.nuit=nuit;
+		this.tax=tax;
+	}
 
 	public String getNuit() {
 		return nuit;

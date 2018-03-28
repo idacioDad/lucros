@@ -9,14 +9,18 @@ import mz.co.clabs.lucros.entity.generic.GenericEntity;
 
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
+ 
  *
  */
 @Entity
 @Table(name="CATEGORY")
 public class CategoryEntity extends GenericEntity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Column(name="NAME", nullable=false,unique=true)
 	private String  name;
 

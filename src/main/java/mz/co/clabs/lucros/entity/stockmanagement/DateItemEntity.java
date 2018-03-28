@@ -9,8 +9,7 @@ import javax.persistence.Table;
 import mz.co.clabs.lucros.entity.generic.GenericEntity;
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
  *
  */
 
@@ -19,13 +18,18 @@ import mz.co.clabs.lucros.entity.generic.GenericEntity;
 @Table(name="DATE_ITEM")
 public class DateItemEntity extends GenericEntity{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Column(name="ENTRACE_DATE", nullable=false)
 	private Calendar entranceDate;
 	
 	@Column(name="DEVOLUTION_DATE")
 	private Calendar devolutionDate;
 	
-	@Column(name="SALES_DATE")
+	@Column(name="SALE_DATE")
 	private Calendar saleDate;
 	
 	@Column(name="EXPIRACTION_DATE")

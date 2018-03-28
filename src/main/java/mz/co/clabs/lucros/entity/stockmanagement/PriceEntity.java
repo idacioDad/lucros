@@ -9,18 +9,23 @@ import mz.co.clabs.lucros.entity.generic.GenericEntity;
 
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
+ 
  *
  */
 @Entity
 @Table(name="PRICE")
 public class PriceEntity extends GenericEntity{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Column(name="PURCHASE_PRICE")
 	private double purchasePrice;
 	
-	@Column(name="PURCHASE_PRICE", nullable=false)
+	@Column(name="SALE_PRICE", nullable=false)
 	private double salePrice;
 
 	public double getPurchasePrice() {

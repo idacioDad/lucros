@@ -10,9 +10,8 @@ import mz.co.clabs.lucros.entity.generic.GenericEntity;
 import mz.co.clabs.lucros.util.EEntityState;
 
 /**
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
- */
+ * @author clabs programmer
+  */
 @Repository
 public class GenericDAOImpl<T extends GenericEntity> implements IGenericDAO<T> {
 	

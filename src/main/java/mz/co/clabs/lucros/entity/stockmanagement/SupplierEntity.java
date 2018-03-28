@@ -7,8 +7,8 @@ import javax.persistence.Table;
 import mz.co.clabs.lucros.entity.generic.GenericEntity;
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
+ 
  *
  */
 
@@ -16,6 +16,11 @@ import mz.co.clabs.lucros.entity.generic.GenericEntity;
 @Table(name="SUPPLIER")
 public class SupplierEntity extends GenericEntity {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Column(name="NUIT",nullable=false,unique=true)
 	private String nuit;
 	

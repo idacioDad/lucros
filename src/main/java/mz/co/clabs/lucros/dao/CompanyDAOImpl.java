@@ -1,7 +1,6 @@
 package mz.co.clabs.lucros.dao;
 
-import java.util.List;
-
+ 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -9,10 +8,10 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 
 import mz.co.clabs.lucros.entity.generic.CompanyEntity;
+import mz.co.clabs.lucros.util.EEntityState;
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
  *
  */
 
@@ -21,12 +20,20 @@ public class CompanyDAOImpl extends GenericDAOImpl<CompanyEntity> implements ICo
 	
 	@PersistenceContext
 	private EntityManager em;
-
-	@SuppressWarnings("unchecked")
-	public List<CompanyEntity> findAll() {
+	
+	@Override
+	public CompanyEntity findAll() {
 		 
 		Query q= em.createNamedQuery(ICompanyDAO.QUERY_NAME.findAll,CompanyEntity.class);
-		return ( List<CompanyEntity> ) q.getResultList();
+		q.setParameter("state", EEntityState.ACTIVE.getState());
+		return (CompanyEntity ) q.getResultList();
+	}
+
+	@Override
+	public CompanyEntity findCompanybyId(Long id) {
+		Query q =em.createNamedQuery(ICompanyDAO.QUERY_NAME.findCompanybyId,CompanyEntity.class);
+		q.setParameter("id", id);
+		return (CompanyEntity)q.getSingleResult();
 	}
 
 }

@@ -1,5 +1,7 @@
 package mz.co.clabs.lucros.entity.generic;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,14 +11,16 @@ import javax.persistence.Id;
 import mz.co.clabs.lucros.util.EEntityState;
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
+ 
  *
  */
 
 @Entity
-public class GenericEntity {
-	
+public  abstract class GenericEntity implements Serializable{
+ 
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="ID")

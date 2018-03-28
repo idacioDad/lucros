@@ -1,14 +1,21 @@
 package mz.co.clabs.lucros.entity.user;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * 
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
+ *
  *
  */
 @Entity
+@Table(name="ADMINISTRATOR" , schema="LUCROS_USER")
 public class AdministratorEntity extends UserEntity implements IWarehouseLoyal , ISalesAgent{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 }

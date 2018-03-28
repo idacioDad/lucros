@@ -2,8 +2,8 @@ package mz.co.clabs.lucros.util;
 
 /**
  * Enumeracao que contem  estados de  Entidade
- * @author Clerio Alfredo Faife
- * @since  13/03/2018
+ * @author clabs programmer
+ *  
  * {@value Activo e Inactivo}
  *
  */
